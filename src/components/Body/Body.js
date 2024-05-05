@@ -75,6 +75,8 @@ function Body() {
             />
           ))}
         </div>
+        <div className={styles.button_container}>
+        <button>Save</button>
         <ReactToPrint
           trigger={() => {
             return (
@@ -85,18 +87,21 @@ function Body() {
           }}
           content={() => resumeRef.current}
         />
+        </div>
       </div>
       <div className={styles.main}>
         <Editor
           sections={sections}
           information={resumeInformation}
           setInformation={setResumeInformation}
+          className={styles.editor}
         />
         <Resume
           ref={resumeRef}
           sections={sections}
           information={resumeInformation}
           activeColor={activeColor}
+          className={styles.resume}
         />
       </div>
     </div>

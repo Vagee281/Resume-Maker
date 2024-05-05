@@ -1,0 +1,42 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #1a237e, #303f9f);
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+  }
+  
+  .navigation {
+    display: flex;
+  }
+  
+  .topbar_item {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative; 
+    transition: text-decoration 0.3s; 
+  }
+  
+  .topbar_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+  }
+  
+  .topbar_item:hover::after {
+    width: 100%; 
+  }
+  
+  .topbar_item:hover {
+    text-decoration: none; 
+  }
+  

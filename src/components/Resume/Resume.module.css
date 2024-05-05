@@ -1,8 +1,9 @@
 .container {
   --color: #239ce2;
-  min-width: 700px;
-  max-width: 850px;
-  margin: 0 auto;
+  min-width: 550px;
+  max-width: 600px;
+  width: 100%;
+  /* margin: 0 auto; */
   flex: 1.2;
   height: fit-content;
   min-height: 900px;

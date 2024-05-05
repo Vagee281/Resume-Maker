@@ -1,5 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 .App {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* gap: 40px; */
 }

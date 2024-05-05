@@ -1,22 +1,28 @@
 import React from "react";
 
-import resumeSvg from "../../assets/resume.svg";
+import resumeSvg from "../../assets/images/resume.svg";
 
 import styles from "./Header.module.css";
-
+import Lottie from "lottie-react";
+import resumeAnimation from "../../assets/lottie files/resumeAnimation.json";
 function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <p className={styles.heading}>
-          A <span>Resume</span> that stands out!
-        </p>
+        Craft Your Unique <span>Resume</span>
+        </p>  
         <p className={styles.heading}>
-          Make your own resume. <span>It's free</span>
+        Make Your Profile Shine, <span>for Free!</span>
         </p>
       </div>
       <div className={styles.right}>
-        <img src={resumeSvg} alt="Resume" />
+        <Lottie
+          animationData={resumeAnimation}
+          loop
+          autoplay
+          style={{ width: 400, height: 400 }}
+        />
       </div>
     </div>
   );
