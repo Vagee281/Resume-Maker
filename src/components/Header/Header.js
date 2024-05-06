@@ -1,12 +1,12 @@
 import React from "react";
-
-import resumeSvg from "../../assets/images/resume.svg";
-
 import styles from "./Header.module.css";
 import Lottie from "lottie-react";
 import resumeAnimation from "../../assets/lottie files/resumeAnimation.json";
+import TopBar from "../TopBar/TopBar";
 function Header() {
   return (
+    <>
+    <TopBar/>
     <div className={styles.container}>
       <div className={styles.left}>
         <p className={styles.heading}>
@@ -25,6 +25,7 @@ function Header() {
         />
       </div>
     </div>
+    </>
   );
 }
 
