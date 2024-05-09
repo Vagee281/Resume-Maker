@@ -7,6 +7,7 @@ import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         {/* <TopBar organisationId="12345" /> */}
 
         <Routes>
+        <Route exact path="/signup" element={<Signup/>}/>
         <Route exact path="/login" element={<Login/>}/>
           <Route exact path="" element={<Header />} />
           <Route exact path="/create-resume" element={<Body />} />
