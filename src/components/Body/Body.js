@@ -62,7 +62,7 @@ function Body() {
 
   return (
     <>
-    <TopBar/>
+    {/* <TopBar/> */}
     <div className={styles.container}>
       <p className={styles.heading}>Resume Builder</p>
       <div className={styles.toolbar}>

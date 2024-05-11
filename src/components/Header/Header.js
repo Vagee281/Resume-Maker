@@ -6,7 +6,7 @@ import TopBar from "../TopBar/TopBar";
 function Header() {
   return (
     <>
-    <TopBar/>
+    {/* <TopBar/> */}
     <div className={styles.container}>
       <div className={styles.left}>
         <p className={styles.heading}>
