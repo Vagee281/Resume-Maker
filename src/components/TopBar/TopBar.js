@@ -3,7 +3,7 @@ import styles from "./TopBar.module.css";
 import { Link } from "react-router-dom";
 const TopBar = ({ organisationId }) => {
   const navButtons = [
-    {text: "Home", route:""},
+    { text: "Home", route: "" },
     { text: "Create Resume", route: "/create-resume" },
     { text: "My Resume", route: "/create-resume" },
     { text: "Customer Reviews", route: "/create-resume" },
@@ -14,19 +14,18 @@ const TopBar = ({ organisationId }) => {
   };
 
   return (
-    <div  className={styles.topbar}>
+    <div className={styles.topbar}>
       <div className={styles.navigation}>
         {navButtons.map((element, index) => (
-          <Link
-            to={element.route}
-            className={styles.topbar_item}
-          >
+          <Link to={element.route} className={styles.topbar_item}>
             {element.text}
           </Link>
         ))}
       </div>
       <div className={styles.logout}>
-        <div className={styles.topbar_item}>Logout</div>
+        <Link to="./login" className={styles.topbar_item}>
+          Logout
+        </Link>
       </div>
     </div>
   );
